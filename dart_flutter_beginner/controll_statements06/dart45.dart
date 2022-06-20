@@ -28,7 +28,6 @@ main() {
   variable = 5;
   print(variable);
 }
-
 /*
 # ile karşılaştırmaif
 Akla gelebilecek bir şey, assertbir ififadeye benzer.
