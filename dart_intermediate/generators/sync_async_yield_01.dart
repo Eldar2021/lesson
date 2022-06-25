@@ -1,6 +1,6 @@
 /*
-yieldAnahtar kelime Dart'ta gerçekte ne yapar ?
-yieldasync * çevreleyen işlevin çıkış akışına bir değer ekler . 
+yield Anahtar kelime Dart'ta gerçekte ne yapar ?
+yield async * çevreleyen işlevin çıkış akışına bir değer ekler . 
 Gibi return, ancak işlevi sonlandırmıyor.
 */
 
