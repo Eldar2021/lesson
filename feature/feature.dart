@@ -4,3 +4,4 @@
 /// multiple asynchronous events with Streams
 /// async* and yield
 /// common Future and Stream-based APIs
+/// effective dart
