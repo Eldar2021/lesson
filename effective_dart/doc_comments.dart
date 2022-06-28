@@ -239,7 +239,8 @@ good*
   /// Defines a flag.
   ///
   /// Throws an [ArgumentError] if there is already an option named [name] or
-  /// there is already an option using abbreviation [abbr]. Returns the new flag.
+  /// there is already an option using abbreviation [abbr]. Returns the new 
+  /// flag.
   Flag addFlag(String name, String abbr) => ...
 
 doc yorumlarını meta veri açıklamalarından önce koyun.
