@@ -26,9 +26,9 @@ işi tamamlamasına izin verir. İşte bazı yaygın eşzamansız işlemler:
   Geliştiriciler, tüm bu çekirdeklerden yararlanmak için geleneksel olarak aynı 
   anda çalışan paylaşılan bellek iş parçacıklarını kullanır. Ancak, paylaşılan 
   durum eşzamanlılığı hataya açıktır ve karmaşık kodlara yol açabilir. 
-  İş parçacıkları yerine, tüm Dart kodu izolatların içinde çalışır. Her izolatın 
-  kendi bellek yığını vardır, bu da hiçbir izolatın durumuna başka bir 
-  izolattan erişilememesini sağlar.
+  İş parçacıkları yerine, tüm Dart kodu izolatların içinde çalışır. 
+  Her izolatın kendi bellek yığını vardır, bu da hiçbir izolatın durumuna 
+  başka bir izolattan erişilememesini sağlar.
 
   Koleksiyonları genişletmeye yönelik özelliklere sahip kullanıcı arayüzleri 
   oluşturmak ve her platform için kullanıcı arayüzünü özelleştirmek için 
