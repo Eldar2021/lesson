@@ -253,8 +253,132 @@ good*
 bad*
   @Component(selector: 'toggle')
   /// A button that can be flipped on and off.
-  class ToggleComponent {}
-
+  class ToggleComponent {} 
+*/
+/*
+Markdown
 Belge yorumlarınızda çoğu markdown formatını kullanmanıza izin verilir ve 
-markdown paketinidart doc kullanarak buna göre işleyeceksiniz .  
+markdown paketinidart doc kullanarak buna göre işleyeceksiniz .
+
+Sizi Markdown ile tanıştıracak tonlarca rehber var. Evrensel popülaritesi, onu 
+seçmemizin nedenidir. İşte size neyin desteklendiğine dair bir fikir vermek 
+için hızlı bir örnek:
+*/
+/// This is a paragraph of regular text.
+///
+/// This sentence has *two* _emphasized_ words (italics) and **two**
+/// __strong__ ones (bold).
+///
+/// A blank line creates a separate paragraph. It has some `inline code`
+/// delimited using backticks.
+///
+/// * Unordered lists.
+/// * Look like ASCII bullet lists.
+/// * You can also use `-` or `+`.
+///
+/// 1. Numbered lists.
+/// 2. Are, well, numbered.
+/// 1. But the values don't matter.
+///
+///     * You can nest lists too.
+///     * They must be indented at least 4 spaces.
+///     * (Well, 5 including the space after `///`.)
+///
+/// Code blocks are fenced in triple backticks:
+///
+/// ```dart
+/// this.code
+///     .will
+///     .retain(its, formatting);
+/// ```
+///
+/// The code language (for syntax highlighting) defaults to Dart. You can
+/// specify it by putting the name of the language after the opening backticks:
+///
+/// ```html
+/// <h1>HTML is magical!</h1>
+/// ```
+///
+/// Links can be:
+///
+/// * https://www.just-a-bare-url.com
+/// * [with the URL inline](https://google.com)
+/// * [or separated out][ref link]
+///
+/// [ref link]: https://google.com
+///
+/// # A Header
+///
+/// ## A subheader
+///
+/// ### A subsubheader
+///
+/// #### If you need this many levels of headers, you're doing it wrong
+void markdown() {}
+
+/*
+Markdown'ı aşırı kullanmaktan KAÇININ.
+Şüphe duyduğunuzda, daha az biçimlendirin. Biçimlendirme, içeriğinizi 
+aydınlatmak için vardır, onu değiştirmek için değil. Önemli olan kelimelerdir.
+
+Biçimlendirme için HTML kullanmaktan KAÇININ.
+Nadir durumlarda tablolar gibi şeyler için kullanmak faydalı olabilir , ancak 
+hemen hemen her durumda, Markdown'da ifade etmek çok karmaşıksa, ifade 
+etmemeniz daha iyi olur.
+
+Kod blokları için ters köşeli çitleri TERCİH EDİN.
+Markdown'ın bir kod bloğunu belirtmenin iki yolu vardır: kodu her satırda dört 
+boşluk bırakarak veya onu bir çift üçlü "çit" satırıyla çevreleyerek. Eski 
+sözdizimi, girintinin zaten anlamlı olduğu Markdown listeleri gibi şeyler 
+içinde kullanıldığında veya kod bloğunun kendisi girintili kod içerdiğinde 
+kırılgandır.
+
+Backtick sözdizimi, bu girinti sıkıntılarını önler, kodun dilini belirtmenize 
+izin verir ve satır içi kod için backtick'leri kullanmakla tutarlıdır.
+
+good*
+  /// You can use [CodeBlockExample] like this:
+  ///
+  /// ```dart
+  /// var example = CodeBlockExample();
+  /// print(example.isItGreat); // "Yes."
+  /// ```
+
+bad*
+  /// You can use [CodeBlockExample] like this:
+  ///
+  ///     var example = CodeBlockExample();
+  ///     print(example.isItGreat); // "Yes."
+*/
+/*
+Writing
+Kendimizi programcılar olarak görüyoruz, ancak bir kaynak dosyadaki 
+karakterlerin çoğu, öncelikle insanların okuması için tasarlanmıştır. 
+İngilizce, iş arkadaşlarımızın beyinlerini değiştirmek için kodladığımız dildir. 
+Herhangi bir programlama diline gelince, yeterliliğinizi geliştirmek için çaba 
+sarf etmeye değer.
+
+Bu bölüm, belgelerimiz için birkaç yönergeyi listeler. Teknik yazı stili gibi 
+makalelerden genel olarak teknik yazı için en iyi uygulamalar hakkında daha 
+fazla bilgi edinebilirsiniz .
+*/
+/*
+Açıkça anlaşılmadıkları sürece kısaltmalardan ve kısaltmalardan KAÇININ.
+
+Many people don’t know what “i.e.”, “e.g.” and “et al.” mean. That acronym that 
+you’re sure everyone in your field knows may not be as widely known as you 
+think.
+
+PREFER using “this” instead of “the” to refer to a member’s instance.
+When documenting a member for a class, you often need to refer back to the 
+object the member is being called on. Using “the” can be ambiguous.
+
+good*
+  class Box {
+    /// The value this wraps.
+    Object? _value;
+
+    /// True if this box contains a value.
+    bool get hasValue => _value != null;
+  }
 */
