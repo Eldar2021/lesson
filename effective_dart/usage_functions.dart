@@ -15,6 +15,7 @@ bir işlev bildirimi ifadesi kullanın.
 */
 /// Good!
 void main() {
+  // ignore: unused_element
   void localFunction() {
     1 + 1;
   }
@@ -22,6 +23,7 @@ void main() {
 
 /// Bad!
 void main1() {
+  // ignore: unused_local_variable
   var localFunction = () {
     1 + 1;
   };
@@ -49,9 +51,11 @@ void main2() {
   charCodes.forEach(buffer.write);
 
   // Named constructor:
+  // ignore: unused_local_variable
   var strings = charCodes.map(String.fromCharCode);
 
 // Unnamed constructor:
+  // ignore: unused_local_variable
   var buffers = charCodes.map(StringBuffer.new);
 }
 
@@ -68,8 +72,10 @@ void main3() {
   });
 
   // Named constructor:
+  // ignore: unused_local_variable
   var strings = charCodes.map((code) => String.fromCharCode(code));
 
   // Unnamed constructor:
+  // ignore: unused_local_variable
   var buffers = charCodes.map((code) => StringBuffer(code));
 }
