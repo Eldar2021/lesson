@@ -7,7 +7,7 @@ uygulamalar, istisnaları yakalamak ve atmak için geçerlidir.
 KAÇININ onyan tümceler olmadan yakalar.
 
 Niteleyici içermeyen bir catch yan tümcesi , try bloğundaki kod tarafından 
-atılan her şeyion yakalar . Pokémon istisna işleme , büyük olasılıkla 
+atılan her şeyion yakalar. Pokémon istisna işleme , büyük olasılıkla 
 istediğiniz gibi değildir. Kodunuz StackOverflowError veya OutOfMemoryError 
 öğelerini doğru şekilde işliyor mu? Bu try bloğundaki bir yönteme yanlış 
 argümanı yanlış bir şekilde iletirseniz, hata ayıklayıcınızın sizi hataya 
