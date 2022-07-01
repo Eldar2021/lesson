@@ -113,3 +113,65 @@ good*
   map.containsKey(key);
   map.containsValue(value);
 */
+/*
+Tip parametrelerini adlandırırken mevcut anımsatıcı kuralları TAKİP EDİN.
+
+Tek harfli adlar tam olarak aydınlatıcı değildir, ancak hemen hemen tüm genel 
+türler bunları kullanır. Neyse ki, bunları çoğunlukla tutarlı, anımsatıcı bir 
+şekilde kullanıyorlar. Sözleşmeler şunlardır:
+
+Ebir koleksiyondaki öğe türü için:
+
+good*
+  class IterableBase<E> {}
+  class List<E> {}
+  class HashSet<E> {}
+  class RedBlackTree<E> {}
+
+K ve bir ilişkisel koleksiyondaki anahtar ve değerV türleri için:
+
+good*
+  class Map<K, V> {}
+  class Multimap<K, V> {}
+  class MapEntry<K, V> {}
+
+R bir işlevin veya bir sınıfın yöntemlerinin dönüş türü olarak kullanılan bir 
+tür için . Bu yaygın değildir, ancak bazen typedef'lerde ve ziyaretçi kalıbını 
+uygulayan sınıflarda görünür:
+
+good*
+  abstract class ExpressionVisitor<R> {
+    R visitBinary(BinaryExpression node);
+    R visitLiteral(LiteralExpression node);
+    R visitUnary(UnaryExpression node);
+  }
+
+Aksi takdirde, tek bir tür parametresi olan ve çevreleyen türün anlamını açıkça 
+ortaya koyduğu jenerikler için T, Sve kullanın. U Çevreleyen bir adı 
+gölgelemeden yuvalamaya izin vermek için burada birden çok harf vardır. Örneğin:
+
+good*
+  class Future<T> {
+    Future<S> then<S>(FutureOr<S> onValue(T value)) => ...
+  }
+
+Burada, genel yöntem , on öğesinin gölgelenmesini önlemek için then<S>() 
+kullanır .STFuture<T>
+*/
+/*
+Yukarıdaki durumlardan hiçbiri uygun değilse, başka bir tek harfli anımsatıcı 
+ad veya açıklayıcı bir ad uygundur:
+
+good*
+  class Graph<N, E> {
+    final List<N> nodes = [];
+    final List<E> edges = [];
+  }
+
+  class Graph<Node, Edge> {
+    final List<Node> nodes = [];
+    final List<Edge> edges = [];
+  }
+
+Uygulamada, mevcut kurallar çoğu tür parametresini kapsar.
+*/
