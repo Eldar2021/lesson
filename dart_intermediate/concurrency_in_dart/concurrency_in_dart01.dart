@@ -54,3 +54,10 @@ içerir. Bu işlemlerin tümü ya farklı bir iş parçacığında çalışır y
 sistemi veya Dart çalışma zamanı tarafından işlenir, bu da Dart kodunun 
 hesaplamayla aynı anda çalışmasına olanak tanır.
 */
+/*
+zaman uyumsuz bekleyen sözdizimi
+and anahtar sözcükleri, eşzamansız işlevleri tanımlamanın ve sonuçlarını 
+kullanmanın bildirimsel bir yolunu sağlar async.await
+
+Dosya G/Ç'sini beklerken bloke eden bazı eşzamanlı kodlara bir örnek:
+*/
