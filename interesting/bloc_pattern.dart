@@ -101,6 +101,7 @@ Business Logic'ten oluşur .
 /// widget'a ulaşır. Bunu yapmak için widget'ımızı  StreamBuilder ile sarmamız
 /// gerekiyor :
 /// ```dart
+/// 
 /// StreamBuilder(                                  // 1
 /// 	stream: bloc.streamController.stream,       // 2
 /// 	builder: (context, snapshot) {              // 3
