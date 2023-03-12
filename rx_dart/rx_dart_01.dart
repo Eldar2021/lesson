@@ -16,5 +16,4 @@ RxDart агымдары. - > RxDart streams.
 Кеңейтүү функциялары. - > Extension functions.
 Темалар. - > Subjects.
 Арткы басым түшүнүгү. - > The concept of Backpressure.
-
 */
