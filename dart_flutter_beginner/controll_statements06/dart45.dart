@@ -23,11 +23,12 @@ main() {
   var variable;
   print(variable);
 
-  assert(variable != null);
-  
+  // assert(variable != null);
+
   variable = 5;
   print(variable);
 }
+
 /*
 # ile karşılaştırmaif
 Akla gelebilecek bir şey, assertbir ififadeye benzer.
@@ -38,10 +39,10 @@ main1() {
   var variable;
   print(variable);
 
-  if(variable != null){
+  // ignore: unnecessary_null_comparison
+  if (variable != null) {
     print('not null');
-  }
-  else{
+  } else {
     variable = 5;
     print(variable);
   }
